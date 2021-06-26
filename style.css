@@ -8,12 +8,12 @@ html {
   margin: 0 auto;
 }
 body {
-  --primary-color: #ec8a49;
-  --primary-var-color: #f8c19c;
+  --primary-color: #009ccf;
+  --primary-var-color: #008ab8;
   --secondary-color: #247ba0;
   --third-color: #fffdd0;
   --error-color: #cf6679;
-  --light-bg-color: #fffdd0;
+  --light-bg-color: snow;
   --heading-bg-color: #f8c19c;
   --basic-font-color: black;
   --target-color: #f8c19c;
@@ -21,7 +21,7 @@ body {
   --light-shadow: #999999;
   --dark-bg-color: #202020;
   margin: 0;
-  background-color: var(--background-color);
+  background-color: var(--light-bg-color);
   color: var(--basic-font-color);
 }
 
@@ -36,7 +36,7 @@ main {
   grid-auto-rows: minmax(4rem, auto);
 }
 .grid-layout > div {
-  border: 1px solid hotpink;
+  _border: 1px solid hotpink;
   background-size: cover;
   display: flex;
   align-items: flex-start;
@@ -50,6 +50,11 @@ main {
 
 /*MEDIA & BREAKPOINTS*/
 @media screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    margin: 0 auto;
+  }
   .grid-layout {
     grid-template-columns: repeat(12, 1fr);
   }
@@ -140,5 +145,53 @@ main {
   .grid-layout .grid-ft-contact {
     grid-column: 11/13;
     grid-row: span 3;
+  }
+
+  /*Specific Styling*/
+  .logo-wrapper {
+    display: flex;
+  }
+  .logo {
+    display: flex;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 253, 208, 1) 0%,
+      rgba(0, 155, 206, 1) 0%,
+      rgba(7, 191, 253, 1) 0%,
+      rgba(2, 175, 233, 1) 48%,
+      rgba(0, 155, 206, 1) 87%
+    );
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 6rem;
+    height: 9rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
+    font-weight: bolder;
+    font-family: "Tangerine", cursive;
+  }
+  .logo-inner-1 {
+    padding-top: 2rem;
+    transform: translateX(0.5rem);
+  }
+  .logo-inner-2 {
+    transform: rotate(180deg);
+    padding-top: 2rem;
+    transform: translate(-5rem -6rem);
+  }
+
+  .logo-pa {
+    font-weight: bold;
+    padding-left: 0.5rem;
+    font-size: 1.4rem;
+  }
+  .logo-pa::first-letter {
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+  .logo-pa span {
+    font-size: 2rem;
+    color: var(--primary-color);
   }
 }
