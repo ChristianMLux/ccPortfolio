@@ -1,0 +1,36 @@
+/*General Styling*/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 auto;
+}
+body {
+  --primary-color: #ec8a49;
+  --primary-var-color: #f8c19c;
+  --secondary-color: #247ba0;
+  --third-color: #fffdd0;
+  --error-color: #cf6679;
+  --background-color: #fffdd0;
+  --heading-bg-color: #f8c19c;
+  --basic-font-color: black;
+  --target-color: #f8c19c;
+  --shadow-color: #616161;
+  --light-shadow: #999999;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--basic-font-color);
+}
+
+main {
+  margin: 0 auto;
+  max-width: 80ch;
+}
+
+/*GRID*/
+
+/*Specific Styling*/
+
+/*MEDIA & BREAKPOINTS*/
