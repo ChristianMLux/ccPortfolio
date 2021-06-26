@@ -63,11 +63,11 @@ main {
     grid-row: span 1;
   }
   .grid-layout .grid-logo {
-    grid-column: 1/7;
+    grid-column: 1/6;
     grid-row: span 4;
   }
   .grid-layout .grid-nav {
-    grid-column: 7/13;
+    grid-column: 6/13;
     grid-row: span 4;
   }
   .grid-layout .grid-space-1 {
@@ -180,7 +180,6 @@ main {
     padding-top: 2rem;
     transform: translate(-5rem -6rem);
   }
-
   .logo-pa {
     font-weight: bold;
     padding-left: 0.5rem;
@@ -193,5 +192,33 @@ main {
   .logo-pa span {
     font-size: 2rem;
     color: var(--primary-color);
+  }
+
+  .grid-nav {
+    justify-content: space-evenly;
+  }
+  .main-nav {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .main-nav > a {
+    border-right: 2px dotted var(--primary-color);
+    margin-right: 0.3rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    font-weight: bold;
+    color: var(--dark-bg-color);
+    transition: background-color 1s color 0.5s;
+  }
+  .main-nav a:last-child {
+    border-right: none;
+    margin-right: 0rem;
+  }
+  .main-nav a:hover {
+    background-color: var(--primary-color);
+    border-radius: 45deg;
+  }
+  .main-nav a:hover::first-letter {
+    color: var(--third-color);
   }
 }
