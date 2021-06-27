@@ -48,6 +48,31 @@ main {
   background-color: var(--dark-bg-color);
   height: 2rem;
 }
+/*Arrow*/
+.arrow {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  border-top: 8px solid var(--light-shadow);
+  border-right: 8px solid var(--light-shadow);
+  transition: border 0.5s;
+}
+.arrow:hover {
+  border-top: 8px solid var(--primary-color);
+  border-right: 8px solid var(--primary-color);
+}
+.arrow-right {
+  transform: rotate(45deg);
+  position: relative;
+  top: 8.3rem;
+  right: -45rem;
+}
+.arrow-left {
+  transform: rotate(-135deg);
+  position: relative;
+  top: 8.3rem;
+  left: -1rem;
+}
 
 /*MEDIA & BREAKPOINTS*/
 @media screen and (min-width: 768px) {
